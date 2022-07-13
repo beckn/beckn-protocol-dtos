@@ -28,6 +28,7 @@ data class ProtocolState @Default constructor(
 
 data class ProtocolPerson @Default constructor(
   val name: String? = null,
+  val id: String? = null,
   val image: String? = null,
   val dob: java.time.LocalDate? = null,
   val gender: String? = null,
