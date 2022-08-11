@@ -6,6 +6,7 @@ data class ProtocolFulfillment @Default constructor(
   val state: ProtocolState? = null,
   val tracking: Boolean? = null,
   val agent: ProtocolPerson? = null,
+  val person: ProtocolPerson? = null,
   val vehicle: ProtocolVehicle? = null,
   val start: ProtocolFulfillmentStart? = null,
   val end: ProtocolFulfillmentEnd? = null,
@@ -33,7 +34,9 @@ data class ProtocolPerson @Default constructor(
   val dob: java.time.LocalDate? = null,
   val gender: String? = null,
   val cred: String? = null,
-  val tags: Map<String, String>? = null
+  val tags: Map<String, String>? = null,
+  val descriptor: ProtocolDescriptor? = null,
+
 )
 
 data class ProtocolVehicle @Default constructor(
